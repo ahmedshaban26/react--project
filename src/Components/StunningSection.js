@@ -38,7 +38,7 @@ const Container = styled.div`
 
     @media screen and (max-width : 768px) {
         width: 80%;
-        height: 50%;
+        height: 45%;
         object-fit: cover;
         order: 1;
         padding: -8rem;
@@ -68,7 +68,7 @@ const Left = styled.div`
         margin-bottom: 30px;
         @media screen and (max-width : 768px) {
             margin-bottom: 30px;
-            margin-top: 15rem;
+            margin-top: 18rem;
             
         }
     }

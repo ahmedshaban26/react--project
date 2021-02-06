@@ -20,7 +20,7 @@ const ListTwo = [
 const Section = styled.div `
     width: 100%;
     height: 100%;
-    padding: 3rem 0rem;
+    padding: 3rem 0rem 0 0;
     color : #fff;
     background: #000d1a;
     `
@@ -165,7 +165,26 @@ const Arrow = styled(IoMdArrowRoundForward)`
     margin-top : 2px;
 `;
 
+const Foot = styled.h3 `
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    padding-bottom : 1rem;
+    text-align: center;
 
+    @media screen and (max-width : 768px) {
+    margin-top : 30px;
+    font-size: 18px;
+    align-items : center;
+
+    }
+`
+const Phone = styled.p `
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    padding-bottom : 1rem;
+`
 const Footer = () => {
     return (
         <Section>
@@ -197,8 +216,14 @@ const Footer = () => {
                         <Button to='/chat'>Let's Chat <Arrow /></Button>
 
                     </Right>
+
                 </RightColumn>
+
+                
             </Container>
+            <Foot>Copyright © 2020 By Ahmed Shaban  all Rights Recervied</Foot>
+                    <Phone> phone : 01144051946</Phone>
+            
         </Section>
     )
 }
